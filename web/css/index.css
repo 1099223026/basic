@@ -379,6 +379,11 @@ a.submit-art{
     width: 180px;
     height: 180px;
 }
+.text-out-hidden{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
 /* public */
 a{text-decoration: none;}
 .pdg-tb-15{padding-top: 15px;padding-bottom:15px;}

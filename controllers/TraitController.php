@@ -2,6 +2,10 @@
 namespace app\controllers;
 
 use yii\data\Pagination;
+use app\models\Posts;
+use app\models\ArticleTerm;
+use app\models\Terms;
+use Yii;
 /**
  * Class TraitController
  * @package app\controllers
@@ -109,4 +113,26 @@ trait TraitController
     }
     /**************************以上两个配合使用（objectToarray是公共的）**************************/
 
+    /**
+     * 获取最新文章、文章精选、标签数据;并将结果保存到view内
+     */
+    public static function getPageInitData( $newArt, $artCulling, $terms){
+        // 获取最新文章
+        $newArt = Posts::getNewArticle();
+        // 对最新文章日期的格式重写
+        $newArt = Posts::updateYearMonPatt( $newArt );
+        // 获取文章精选
+        $artCulling = ArticleTerm::getArticleCulling();
+        // 对文章精选日期的格式重写
+        $artCulling = Posts::updateYearMonPatt( $artCulling );
+        // 获取标签数据
+        $terms = Terms::find()
+            ->select("name")
+            ->all();
+        // 将标签、最新文章...传递到布局文件中
+        $view = Yii::$app->view;
+        $view->params[ 'newArt' ] = $newArt;
+        $view->params[ 'terms' ] = $terms;
+        $view->params[ 'artCulling' ] = $artCulling;
+    }
 }

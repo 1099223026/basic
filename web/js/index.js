@@ -11,6 +11,8 @@ $( document ).ready( function(){
         /*自适应（单击元素，显示下拉菜单）*/
         selfAdaption();
     }
+    // bootstrap 工具提示
+   $('[data-toggle="tooltip"]').tooltip();
 });
 /*自适应（单击元素，显示下拉菜单）*/
 function selfAdaption() {

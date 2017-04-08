@@ -12722,3 +12722,1106 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1491285164.997
     'REQUEST_TIME' => 1491285164
 ]
+2017-04-05 12:14:53 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'v_article_term' in 'field list'' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 G:\PhpStorm\yii2\basic\controllers\SiteController.php(28): yii\db\Command->execute()
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'v_article_term' in 'field list'
+The SQL being executed was: call p_replace_article_mesh' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'call p_replace_...')
+#1 G:\PhpStorm\yii2\basic\controllers\SiteController.php(28): yii\db\Command->execute()
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'v_article_term' in 'field list'
+)
+
+2017-04-05 12:14:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'scrollTop' => '0'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '56379'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/basic/web/index.php'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491365693.628
+    'REQUEST_TIME' => 1491365693
+]
+2017-04-05 12:21:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Undefined class constant 'articleCulling'' in G:\PhpStorm\yii2\basic\controllers\SiteController.php:46
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#6 {main}
+2017-04-05 12:21:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'scrollTop' => '3221.8181119871547'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=3221.8181119871547'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/basic/web/index.php'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491366113.63
+    'REQUEST_TIME' => 1491366113
+]
+2017-04-05 12:22:22 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Undefined class constant 'ArticleCulling'' in G:\PhpStorm\yii2\basic\controllers\SiteController.php:46
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#6 {main}
+2017-04-05 12:22:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'scrollTop' => '3221.8181119871547'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=3221.8181119871547'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57099'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/basic/web/index.php'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491366141.699
+    'REQUEST_TIME' => 1491366141
+]
+2017-04-05 15:37:28 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: artCulling' in G:\PhpStorm\yii2\basic\views\layouts\index.php:104
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile()
+#2 G:\PhpStorm\yii2\basic\controllers\SiteController.php(92): yii\base\Controller->render()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionArticleContent()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#9 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#10 {main}
+2017-04-05 15:37:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'scrollTop' => '727.2727115095158'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=727.2727115095158'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '55092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&id=5'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491377848.326
+    'REQUEST_TIME' => 1491377848
+]
+2017-04-05 15:47:31 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: artCulling' in G:\PhpStorm\yii2\basic\views\layouts\index.php:104
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile()
+#2 G:\PhpStorm\yii2\basic\controllers\ReportController.php(72): yii\base\Controller->render()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\ReportController->actionIndex()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#9 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#10 {main}
+2017-04-05 15:47:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'report/index'
+]
+
+$_COOKIE = [
+    'scrollTop' => '545.4545336321369'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=545.4545336321369'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '56176'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=report/index'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=report/index'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491378450.455
+    'REQUEST_TIME' => 1491378450
+]
+2017-04-05 15:56:37 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::__construct(), called in G:\PhpStorm\yii2\basic\controllers\ReportController.php on line 50 and defined' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php:77
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\ReportController->actionIndex()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 15:56:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'report/index'
+]
+
+$_COOKIE = [
+    'scrollTop' => '469.09089892363767'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=469.09089892363767'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '56830'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=report/index'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=report/index'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491378996.394
+    'REQUEST_TIME' => 1491378996
+]
+2017-04-05 15:56:45 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=123....', 'root', 'xgp123!@#', NULL)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 G:\PhpStorm\yii2\basic\controllers\ReportController.php(282): yii\db\ActiveQuery->all()
+#10 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Component.php(130): app\controllers\ReportController->getConsumeQuarterData()
+#11 G:\PhpStorm\yii2\basic\controllers\ReportController.php(31): yii\base\Component->__get('consumeQuarterD...')
+#12 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\ReportController->init()
+#13 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#14 [internal function]: yii\base\Controller->__construct('report', Object(yii\web\Application), Array)
+#15 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#16 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('app\\controllers...', Array, Array)
+#17 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\\controllers...', Array)
+#18 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\\controllers...', Array)
+#19 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('report')
+#20 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('report/index')
+#21 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('report/index', Array)
+#22 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 G:\PhpStorm\yii2\basic\controllers\ReportController.php(282): yii\db\ActiveQuery->all()
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Component.php(130): app\controllers\ReportController->getConsumeQuarterData()
+#9 G:\PhpStorm\yii2\basic\controllers\ReportController.php(31): yii\base\Component->__get('consumeQuarterD...')
+#10 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\ReportController->init()
+#11 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(81): yii\base\Object->__construct(Array)
+#12 [internal function]: yii\base\Controller->__construct('report', Object(yii\web\Application), Array)
+#13 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#14 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('app\\controllers...', Array, Array)
+#15 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('app\\controllers...', Array)
+#16 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(568): yii\BaseYii::createObject('app\\controllers...', Array)
+#17 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('report')
+#18 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('report/index')
+#19 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('report/index', Array)
+#20 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2017-04-05 15:56:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'report/index'
+]
+
+$_COOKIE = [
+    'scrollTop' => '469.09089892363767'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=469.09089892363767'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '56821'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=report/index'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=report/index'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491378984.254
+    'REQUEST_TIME' => 1491378984
+]
+2017-04-05 16:00:11 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\Posts' not found' in G:\PhpStorm\yii2\basic\controllers\TraitController.php:117
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionArticleContent()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 16:00:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'scrollTop' => '105.45454316887978'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=105.45454316887978'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&id=5'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491379211.543
+    'REQUEST_TIME' => 1491379211
+]
+2017-04-05 16:00:54 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\ArticleTerm' not found' in G:\PhpStorm\yii2\basic\controllers\TraitController.php:122
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionArticleContent()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 16:00:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'scrollTop' => '105.45454316887978'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=105.45454316887978'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57225'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&id=5'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491379253.617
+    'REQUEST_TIME' => 1491379253
+]
+2017-04-05 16:01:05 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\Terms' not found' in G:\PhpStorm\yii2\basic\controllers\TraitController.php:127
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionArticleContent()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 16:01:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'scrollTop' => '105.45454316887978'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=105.45454316887978'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&id=5'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491379264.851
+    'REQUEST_TIME' => 1491379264
+]
+2017-04-05 16:01:17 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\Yii' not found' in G:\PhpStorm\yii2\basic\controllers\TraitController.php:132
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionArticleContent()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 16:01:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'scrollTop' => '105.45454316887978'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=105.45454316887978'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57335'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&id=5'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491379277.002
+    'REQUEST_TIME' => 1491379277
+]
+2017-04-05 16:01:43 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::__construct(), called in G:\PhpStorm\yii2\basic\controllers\ReportController.php on line 50 and defined' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php:77
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\ReportController->actionIndex()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-05 16:01:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'report/index'
+]
+
+$_COOKIE = [
+    'scrollTop' => '454.54544469344734'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://basic.yii2.com/yii2/basic/web/index.php?r=site/article-content&id=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=454.54544469344734'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '57349'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=report/index'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=report/index'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491379303.096
+    'REQUEST_TIME' => 1491379303
+]
+2017-04-06 11:20:07 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '缂哄皯鍙傛暟锛歩d' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('article-content', Array)
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/article-co...', Array)
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#6 {main}
+2017-04-06 11:20:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/article-content'
+    'article' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '59613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/article-content&article=1'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/article-content&article=1'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491448806.997
+    'REQUEST_TIME' => 1491448806
+]
+2017-04-06 11:20:17 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('test', Array)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/test', Array)
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2017-04-06 11:20:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '59617'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/test'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491448816.973
+    'REQUEST_TIME' => 1491448816
+]
+2017-04-06 11:20:34 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'221.7.82.195' (using password: YES)' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=123....', 'root', 'xgp123!@#', NULL)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(210): yii\db\Connection->getMasterPdo()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(762): yii\db\Command->prepare(false)
+#5 G:\PhpStorm\yii2\basic\controllers\SiteController.php(29): yii\db\Command->execute()
+#6 [internal function]: app\controllers\SiteController->actionIndex()
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#11 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'221.7.82.195' (using password: YES)' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(210): yii\db\Connection->getMasterPdo()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\db\Command.php(762): yii\db\Command->prepare(false)
+#3 G:\PhpStorm\yii2\basic\controllers\SiteController.php(29): yii\db\Command->execute()
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#8 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#9 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#11 {main}
+Additional Information:
+
+2017-04-06 11:20:33 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '59624'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2/basic/web/index.php'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491448833.094
+    'REQUEST_TIME' => 1491448833
+]
+2017-04-06 11:21:21 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('test', Array)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/test', Array)
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2017-04-06 11:21:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_COOKIE = [
+    'scrollTop' => '818.1818004482052'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=818.1818004482052'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '59648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/test'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491448881.535
+    'REQUEST_TIME' => 1491448881
+]
+2017-04-06 11:21:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined property: yii\coreseek\SphinxClient::$_socket' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\coreseek\SphinxClient.php:503
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionTest()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#5 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#7 {main}
+2017-04-06 11:21:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_COOKIE = [
+    'scrollTop' => '818.1818004482052'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=818.1818004482052'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '59661'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/test'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491448900.483
+    'REQUEST_TIME' => 1491448900
+]
+2017-04-06 11:35:04 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\controllers\dump()' in G:\PhpStorm\yii2\basic\controllers\SiteController.php:24
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#4 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#6 {main}
+2017-04-06 11:35:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_COOKIE = [
+    'scrollTop' => '818.1818004482052'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'scrollTop=818.1818004482052'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '60029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/test'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491449704.145
+    'REQUEST_TIME' => 1491449704
+]

@@ -52,4 +52,17 @@ class ArticleTerm extends ActiveRecord
             ->one();
         return $res;
     }
+
+    /**
+     * 获取文章精选
+     * return : 返回recommended=1的记录
+     */
+    public static function getArticleCulling(){
+        $res = ArticleTerm::find()
+            ->where([ 'recommended' => 1 ])
+            ->select( 'id, post_date, post_title' )
+            ->limit( 10 )
+            ->all();
+        return $res;
+    }
 }

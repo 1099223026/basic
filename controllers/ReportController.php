@@ -44,6 +44,10 @@ class ReportController extends Controller
      */
     public function actionIndex()
     {
+
+        // 获取最新文章、文章精选、标签数据;并将结果保存到view内
+        $newArt = $artCulling = $terms = null;
+        TraitController::getPageInitData( $newArt, $artCulling, $terms);
         // 设置布局文件
         $this->layout = 'index';
         

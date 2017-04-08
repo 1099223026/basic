@@ -24,6 +24,7 @@ AppAsset::register( $this );
 <!-- 加载js文件 -->
 <?php echo AppAsset::addPageScript( $this, '@web/js/refresh_ban_roll.js' ); ?>
 <?php echo AppAsset::addPageScript( $this, '@web/js/index.js' ); ?>
+<?php echo AppAsset::addPageScript( $this, '@web/assets/5ae5ac51/jquery.min.js' ); ?>
 <?php echo AppAsset::addPageScript( $this, '@web/assets/44a118f3/js/bootstrap.js' ); ?>
 
 <!--  页头  -->
@@ -99,12 +100,17 @@ AppAsset::register( $this );
                     <!--文章精选-->
                     <div class="widget mgnb-35">
                         <h4 class="widget-title">文章精选</h4>
-                        <div class="row">
-                            <p class="col-md-8">
-                            	<a class="text-title" href="javascript:void(0);">消费系统1.1版本正式发布</a>
-                            	<div class="col-md-4 text-date">2017年3月16日</div>
-                            </p>
-                        </div>
+                        <?php foreach ( $this->params[ 'artCulling' ] as $cull ){?>
+                            <div class="row">
+                                <p class="col-md-6 text-out-hidden mgnb-clear"  data-toggle="tooltip" data-placement="bottom" title="<?= $cull[ 'post_title' ]?>">
+                                <!--标题隐藏超出部分-->
+                                    <a class="text-title" href="javascript:void(0);">
+                                        <?= $cull[ 'post_title' ]?>
+                                    </a>
+                                </p>
+                                <div class="col-md-6 text-date"><?= $cull[ 'post_date' ]?></div>
+                            </div>
+                        <?php }?>
                     </div>
                     <!--标签云-->
                     <div class="widget mgnb-35">

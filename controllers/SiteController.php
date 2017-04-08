@@ -3,10 +3,8 @@
 namespace app\controllers;
 
 use app\models\ArticleTerm;
-use app\models\Terms;
 use Yii;
-use yii\data\ArrayDataProvider;
-use yii\data\SqlDataProvider;
+use yii\coreseek\SphinxClient;
 use yii\web\Controller;
 use app\models\Posts;
 use app\models\TermRelationships;
@@ -19,6 +17,17 @@ use yii\data\Pagination;
  */
 class SiteController extends Controller
 {
+    public function actionTest(){
+        $sphinx = new SphinxClient();
+        $sphinx->SetServer( '123.206.81.240', 9312 );
+        $sphinx->SetMatchMode( SPH_MATCH_ANY );
+//        var_dump( $sphinx );
+
+        $index="test1";
+        $res = $sphinx->Query( '北京天津上海', $index);
+        $err = $sphinx->GetLastError();
+        var_dump( $res );
+    }
     /* 前台页面 */
     // 主页
     public function actionIndex()
@@ -36,18 +45,9 @@ class SiteController extends Controller
         // 取出smeta的图片地址进行重新写入
         $model = ArticleTerm::setSmeta( $model );
         $model = Posts::updateYearMonPatt( $model );
-        // 获取最新文章
-        $newArt = Posts::getNewArticle();
-        // 对最新文章日期的格式重写
-        $newArt = Posts::updateYearMonPatt( $newArt );
-        // 获取标签数据
-        $terms = Terms::find()
-            ->select("name")
-            ->all();
-        // 将标签、最新文章...传递到布局文件中
-        $view = Yii::$app->view;
-        $view->params[ 'newArt' ] = $newArt;
-        $view->params[ 'terms' ] = $terms;
+        // 获取最新文章、文章精选、标签数据;并将结果保存到view内
+        $newArt = $artCulling = $terms = null;
+        TraitController::getPageInitData( $newArt, $artCulling, $terms);
         // 设置布局文件
         $this->layout = 'index';
         return $this->render( 'home',array(
@@ -63,19 +63,9 @@ class SiteController extends Controller
         $article = ArticleTerm::setSmeta( $article );
         // 对日期格式重写
         $article = Posts::updateYearMonPatt( $article );
-        // 获取最新文章
-        $newArt = Posts::getNewArticle();
-        // 对最新文章日期的格式重写
-        $newArt = Posts::updateYearMonPatt( $newArt );
-        // 获取标签数据
-        $terms = Terms::find()
-            ->select("name")
-            ->all();
-        // 将标签、最新文章...传递到布局文件中
-        $view = Yii::$app->view;
-        $view->params[ 'newArt' ] = $newArt;
-        $view->params[ 'terms' ] = $terms;
-//        var_dump($article);exit;
+        // 获取最新文章、文章精选、标签数据;并将结果保存到view内
+        $newArt = $artCulling = $terms = null;
+        TraitController::getPageInitData( $newArt, $artCulling, $terms);
         // 指定布局文件
         $this->layout = 'index';
         return $this->render( 'article', array(
