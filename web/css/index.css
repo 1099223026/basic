@@ -397,6 +397,9 @@ a{text-decoration: none;}
 .mgnt-40{margin-top: 40px;}
 .mgnb-35{margin-bottom:35px;}
 .hgt-wdt-percent{height: 100%;width: 100%;}
+.pst-relative{position: relative;}
+.a-line{text-decoration: underline;}
+.black{color: #3a3535;}
 /*zt*/
 .bdr-brown{border-bottom:2px solid #e67e22;}
 .bg-brown{background: #e67e22;}

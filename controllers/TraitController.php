@@ -1,9 +1,10 @@
 <?php
 namespace app\controllers;
 
+use app\models\Search;
 use yii\data\Pagination;
 use app\models\Posts;
-use app\models\ArticleTerm;
+use app\models\ArticleMesh;
 use app\models\Terms;
 use Yii;
 /**
@@ -19,13 +20,14 @@ trait TraitController
      * @param $field 排序字段 默认为date 降序排序
      * @return array  pages=>分页对象 model=>获取到consume表数据
      */
-    public static function paging( $query, $field = 'date', $pageSize='12' )
+    public static function paging( $query, $field = 'date', $pageSize='12', $select='' )
     {
         // 传入记录总数 and 一页显示记录数
         $pages = new Pagination([ 'totalCount' => $query->count(), 'pageSize' => $pageSize ]);
         $model = $query->offset( $pages->offset )
             ->limit( $pages->limit )
             ->orderBy($field.' DESC')
+            ->select( $select )
             ->all();
         return ['pages' => $pages, 'model' => $model];
     }
@@ -122,17 +124,20 @@ trait TraitController
         // 对最新文章日期的格式重写
         $newArt = Posts::updateYearMonPatt( $newArt );
         // 获取文章精选
-        $artCulling = ArticleTerm::getArticleCulling();
+        $artCulling = ArticleMesh::getArticleCulling();
         // 对文章精选日期的格式重写
         $artCulling = Posts::updateYearMonPatt( $artCulling );
         // 获取标签数据
         $terms = Terms::find()
             ->select("name")
             ->all();
+        // 获取搜索表单
+        $model = new Search();
         // 将标签、最新文章...传递到布局文件中
         $view = Yii::$app->view;
         $view->params[ 'newArt' ] = $newArt;
         $view->params[ 'terms' ] = $terms;
         $view->params[ 'artCulling' ] = $artCulling;
+        $view->params[ 'model' ] = $model;
     }
 }

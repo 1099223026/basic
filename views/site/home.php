@@ -1,6 +1,17 @@
 <!--主页-->
 <!--卡片集-->
 <main class="col-md-8">
+    <?php if (isset( $title ) ){?>
+    <!--    标题-->
+        <article class="card bg-white">
+            <header class="text-center">
+                <!--结果集标题-->
+                <h1 class="card-title mgn-clear"><a href="javascript:void(0);"><?=$title;?></a></h1>
+                <!--搜索总记录数-->
+                <div class="mgnt-15">共 <?=$count;?> 篇文章</div>
+            </header>
+        </article>
+    <?php }?>
     <!--卡片-->
 <?php foreach ($article as $art ){ ?>
     <article class="card bg-white">
@@ -19,9 +30,17 @@
             <?=$art['post_excerpt'];?>
             <!--查看全部按钮-->
             <div class="mgnt-35 card-btn text-left">
-                <a class="submit-art" href="http://basic.yii2.com/yii2/basic/web/index.php?r=site/article-content&id=<?php echo( $art['id'] );?>">
-                    <button id="card-btn" type="button" class="btn bg-brown">查看全部</button>
-                </a>
+                <?php $form = \yii\bootstrap\ActiveForm::begin([
+                    'action' => ['site/find-article-by-id'],
+                    'method' => 'get',
+                ])?>
+                <?= $form->field($model, 'id')->textInput([
+                    'class'=> "hidden",
+                    'name' => 'id',
+                    'value' => $art['id'],
+                ])->label( false ); ?>
+                <button id="card-btn" type="submit" class="btn bg-brown">查看全部</button>
+                <?php \yii\bootstrap\ActiveForm::end();?>
             </div>
         </section>
         <!--底部-->
@@ -33,7 +52,7 @@
 //            循环打印出数组
                     foreach ( $arr as $tag ) {
                ?>
-                    <a class="tag-link-title" href="#"><?php echo $tag;?></a>
+                    <a class="tag-link-title" href="index.php?r=site/show-article-by-tab&tab=<?=$tag;?>"><?php echo $tag;?></a>
                 <?php }?>
         </footer>
     </article>

@@ -65,18 +65,27 @@ AppAsset::register( $this );
                 	<!--搜索框-->
                     <div class="widget mgnb-35">
                         <h4 class="widget-title">搜索</h4>
-                        <form action="#" method="post">
-                        	<div class="input-group">
-							  <input style="border-radius: 0;width: 185px;margin-right: 5px;" type="text" class="form-control" placeholder="请输入要查找的文章">
-							  	<button type="button" class="btn" style="border-radius: 0;color:#fff;background: #e67e22;"><span class="glyphicon glyphicon-search"></span></button>
-							</div>
-                        </form>
+                        <?php $form = \yii\bootstrap\ActiveForm::begin([
+                            'action' => ['site/search'],
+                            'method'=>'get',
+                            'options' => ['class' => 'pst-relative'],
+                        ]); ?>
+                            <?= $form->field($this->params[ 'model' ], 'content')->textInput([
+                                'style' => "border-radius: 0;width: 185px;",
+                                'class'=> "form-control",
+                                'placeholder'=>'请输入要查找的文章',
+                                'name' => 'content'
+                            ])->label( false ); ?>
+                            <?= Html::submitButton('<span class="glyphicon glyphicon-search"></span>', [
+                                'class'=>'btn',
+                                'style' =>'position: absolute;top: 0;left: 190px;border-radius: 0;color:#fff;background: #e67e22;'
+                            ]) ?>
+                        <?php \yii\bootstrap\ActiveForm::end(); ?>
                     </div>
                     <!--社区-->
                     <div class="widget mgnb-35">
-                        <h4 class="widget-title">社区</h4>
+                        <h4 class="widget-title">相关链接</h4>
                         <div>
-                            <p>管理员QQ：630873133</p>
                             <p class="mgnb-clear">
                                 <a class="widget-leave" href="index.php?r=site/index">
                                     <span class="glyphicon glyphicon-home"></span>
@@ -95,6 +104,12 @@ AppAsset::register( $this );
                                 	&nbsp;查看寝室消费
                                 </a>
                             </p>
+                            <p class="mgnb-clear">
+                                <a class="widget-leave" target="_blank" href="http://think.cmf.com/admin">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    &nbsp;后台管理
+                                </a>
+                            </p>
                         </div>
                     </div>
                     <!--文章精选-->
@@ -104,7 +119,7 @@ AppAsset::register( $this );
                             <div class="row">
                                 <p class="col-md-6 text-out-hidden mgnb-clear"  data-toggle="tooltip" data-placement="bottom" title="<?= $cull[ 'post_title' ]?>">
                                 <!--标题隐藏超出部分-->
-                                    <a class="text-title" href="javascript:void(0);">
+                                    <a class="text-title" href="index.php?r=site/find-article-by-id&id=<?=$cull['id']?>">
                                         <?= $cull[ 'post_title' ]?>
                                     </a>
                                 </p>
@@ -117,7 +132,7 @@ AppAsset::register( $this );
                         <h4 class="widget-title">标签云</h4>
                         <div class="content tag-cloud">
                             <?php foreach ( $this->params[ 'terms' ] as $term ){?>
-                        	<a href="javascript:void(0);"><?php echo $term['name'];?></a>
+                        	<a href="index.php?r=site/show-article-by-tab&tab=<?=$term['name'];?>"><?php echo $term['name'];?></a>
                             <?php }?>
                         </div>
                     </div>
@@ -135,7 +150,7 @@ AppAsset::register( $this );
                         <h4 class="title">最新文章</h4>
                         <div class="recent-scrap">
                             <?php foreach ( $this->params[ 'newArt'] as $art ){?>
-                                <a class="recent-scrap-title" href="#"><?php echo $art['post_title'];?></a>
+                                <a class="recent-scrap-title" href="index.php?r=site/find-article-by-id&id=<?=$art['id']?>"><?php echo $art['post_title'];?></a>
                                 <div class="recent-scrap-date"><?php echo $art['post_date'];?></div>
                             <?php }?>
                         </div>
