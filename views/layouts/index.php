@@ -117,7 +117,7 @@ AppAsset::register( $this );
                         <h4 class="widget-title">文章精选</h4>
                         <?php foreach ( $this->params[ 'artCulling' ] as $cull ){?>
                             <div class="row">
-                                <p class="col-md-6 text-out-hidden mgnb-clear"  data-toggle="tooltip" data-placement="bottom" title="<?= $cull[ 'post_title' ]?>">
+                                <p class="col-md-6 text-out-hidden mgnb-clear"  data-toggle="tooltip" data-placement="left" title="<?= $cull[ 'post_title' ]?>">
                                 <!--标题隐藏超出部分-->
                                     <a class="text-title" href="index.php?r=site/find-article-by-id&id=<?=$cull['id']?>">
                                         <?= $cull[ 'post_title' ]?>

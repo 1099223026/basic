@@ -26,7 +26,7 @@
             //            循环打印出数组
             foreach ( $arr as $tag ) {
                 ?>
-                <a class="tag-link-title" href="#"><?php echo $tag;?></a>
+                <a class="tag-link-title" href="index.php?r=site/show-article-by-tab&tab=<?=$tag;?>"><?php echo $tag;?></a>
             <?php }?>
         </footer>
     </article>

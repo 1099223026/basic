@@ -17595,3 +17595,57 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1491977578.39
     'REQUEST_TIME' => 1491977578
 ]
+2017-04-12 19:57:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('test', Array)
+#1 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/test', Array)
+#2 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/test' in G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 G:\PhpStorm\yii2\basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\PhpStorm\yii2\basic\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2017-04-12 19:57:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/test'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic.yii2.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Java\\jdk1.8.0_05\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at basic.yii2.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'basic.yii2.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/PhpStorm'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'G:/PhpStorm/yii2/basic/web/index.php'
+    'REMOTE_PORT' => '50025'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/test'
+    'REQUEST_URI' => '/yii2/basic/web/index.php?r=site/test'
+    'SCRIPT_NAME' => '/yii2/basic/web/index.php'
+    'PHP_SELF' => '/yii2/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491998222.857
+    'REQUEST_TIME' => 1491998222
+]
